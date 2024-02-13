@@ -1,0 +1,53 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20230218201739
+Username: Evas_Dell\Evelyn Jimenez
+RunAs User: Evas_Dell\Evelyn Jimenez
+Configuration Name: 
+Machine: EVAS_DELL (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -Command & { Import-Module 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\Microsoft.VisualStudio.DevShell.dll'; Enter-VsDevShell -SetDefaultWindowTitle -InstallPath 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise' -StartInPath 'C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Projects\StuDB' }
+Process ID: 15896
+PSVersion: 5.1.22621.963
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.963
+BuildVersion: 10.0.22621.963
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\OUTPUT-TEST.txt
+PS C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Projects\StuDB> .\bin\Debug\StuDB.exe
+            **** Student DataBase Main Menu ****
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            [A]dd a new student record
+            [E]dit an existing student record
+            [D]elete a student record
+            [F]ind a student in the database
+            [P]rint out all records
+            [Q]uit the app after saving
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ENTER selection: q
+Unhandled Exception: System.UnauthorizedAccessException: Access to the path 'C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Pr
+ojects\StuDB\STUDENT_DATA_OUTPUTFILE.txt' is denied.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int3
+2 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean che
+ckHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions option
+s, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path)
+   at StuDB.StudentDB.SaveAllRecordsToOutputFile() in C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Projects\StuDB\StudentDB.
+cs:line 254
+   at StuDB.StudentDB.QuitAppAfterSave() in C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Projects\StuDB\StudentDB.cs:line 20
+6
+   at StuDB.StudentDB.GoDatabase() in C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Projects\StuDB\StudentDB.cs:line 56
+   at StuDB.Program.Main(String[] args) in C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Projects\StuDB\Program.cs:line 16
+PS C:\Users\Evelyn Jimenez\OneDrive\Desktop\UW Wi' 23\C#\Projects\StuDB> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20230218201931
+**********************
